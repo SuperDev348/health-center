@@ -1,0 +1,193 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center mt-1">
+                {{practice_name}}
+            </h1>
+            <p class="text-center">
+                {{address}}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <tr>
+                    <td class="text-center">
+                        <p>
+                            Provider
+                        </p>
+                        {{professional}}
+                    </td>
+                    <td class="text-center">
+                        {{patient}}<br>
+                        DOB: {{patient_dob}}
+                    </td>
+                    <td class="text-center">
+                        D.O.S
+                        <br>
+                        {{date}}
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped">
+                <tr>
+                    <td>
+                        <b>Allergies</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_allergies}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Current Meds.</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_current_meds}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Medical History</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_medical_history}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Social History</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_social_history}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Family History</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_family_history}}</pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-12" style="margin-top: 3rem">
+            <table class="table">
+                <thead>
+                <tr>
+                    <td>
+                        <b>BP</b>
+                    </td>
+                    <td>
+                        <b>Pulse</b>
+                    </td>
+                    <td>
+                        <b>Resp. Rate</b>
+                    </td>
+                    <td>
+                        <b>Temp.</b>
+                    </td>
+                    <td>
+                        <b>Height (In)</b>
+                    </td>
+                    <td>
+                        <b>Weight (lb)</b>
+                    </td>
+                    <td>
+                        <b>BMI</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{mere_bp}}</td>
+                    <td>{{mere_pulse}}</td>
+                    <td>{{mere_resp_rate}}</td>
+                    <td>{{mere_temp}}</td>
+                    <td>{{mere_height}}</td>
+                    <td>{{mere_weight}}</td>
+                    <td>{{bmi}}</td>
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="col-12">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <td>
+                        <b>Item</b>
+                    </td>
+                    <td>
+                        <b>Description</b>
+                    </td>
+                </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <b>Chief Complaint</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_chief_complaint}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>HPI</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_hpi}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Subject</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_subject}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Objective</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_objective}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Assessment</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_assessment}}</pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Plan</b>
+                    </td>
+                    <td>
+                        <pre>{{mere_plan}}</pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {{#if mere_addendum}}
+        <div class="row">
+        <div class="col-12">
+            <h4>Addendum</h4>
+            <pre>{{mere_addendum}}</pre>
+            <p>
+                Addendum was updated at: {{updated}}
+            </p>
+        </div>
+    </div>
+    {{/if}}
+</div>
